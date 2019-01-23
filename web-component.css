@@ -1,0 +1,241 @@
+body {
+    position : absolute;
+    top      : 0;
+    left     : 0;
+    right    : 0;
+    bottom   : 0;
+	margin   : 0;
+	overflow : hidden;
+
+}
+
+main {
+	position         : relative; 
+	width            : 100%; 
+	height           : 100%;
+	overflow         : hidden;
+	outline          : dotted 2px gray;
+	background       : linear-gradient(45deg, rgba( 42, 19, 255, 1 ), rgba(175, 0, 255, 1 ) 70%, rgba(175, 0, 255, 1 ));
+	perspective      : 800px;
+	transform-origin : 50% 50%;
+	transform        :  translateZ(0px);
+}
+
+canvas {
+	background-color: transparent;
+}
+
+#slider-component {
+	position   : absolute;
+	bottom 	  : 80px;
+	left 	  : 0;
+	right 	  : 0;
+	margin 	  : 0 auto;
+	width 	  : 400px;
+	text-align : center;
+	color 	  : rgba(255, 255, 255, 0.78);
+}
+
+#controls {
+	display               : -webkit-flex;
+	display               : flex;
+	-webkit-flex-direction: row;
+	flex-direction        : row;
+	flex-flow 			  : row nowrap;
+	justify-content  	  : flex-start;
+	align-items 		  : center;
+}
+
+#buttons {
+	display : inline;
+	font    : 14px Arial;
+}
+
+#readout {
+    margin-left :  4px;
+    font        : 18px monospace;
+}
+
+#slider {
+    width       : 75%;
+    height      : 30px;
+    flex-shrink : 0;
+}
+
+.slider-button {
+	width 		 : 25px;
+	background 	 : #d500ff;
+	font 		 : 16px Arial;
+	font-weight 	 : bolder;
+	border-radius : 4px;
+	border 		 : 1px solid rgba(255, 255, 255, 0.39);
+	cursor 		 : pointer;
+	margin 		 : 0px;
+	color 		 : rgba(255, 255, 255, 0.78);
+}
+
+input[type="button"]:focus {
+	outline: 0px
+}
+
+
+#form-1 {
+	position : fixed;
+	bottom   : 30px;
+	left     : 25%;
+	width    : 250px;
+	z-index  : 10
+
+}
+
+#front-pink-N1 {
+	top   	 		 : -230px;
+	left  	 		 : 30%;
+	width 	 		 : 260px;
+	height 	 		 : 380px;
+	background-color : rgba( 255,  27, 255, 1);
+	z-index  		 : 3;
+}
+
+#front-pink-N2 {
+	top    	 		 :  80%;
+	left   	 		 :  -2%;
+	width  	 		 : 260px;
+	height 	 		 : 380px;
+	background-color : rgba( 255,  27, 255, 1);
+	z-index  		 : 3;
+
+}
+
+#front-lime-N3 {
+	bottom   		 : -65px;
+	left   	 		 :   85%;
+	width  	 		 : 260px;
+	height 	 		 : 380px;
+	background-color : lime;
+	z-index  		 : 3;
+}
+
+#back-pink-N4 {
+	top    			 : 50px;
+	left   			 : 1070px;
+	width  			 : 50px;
+	height 			 : 200px;
+	background-color : rgba( 255,  27, 255, 1);
+	z-index  		 : 2;
+}
+
+
+#back-lime-N5 {
+	top  			 : 230px;
+	left    		 : 150px;
+	width   		 :  50px;
+	height  		 : 170px;
+	background-color : rgba( 255,  27, 255, 1);				
+	z-index  		 : 2;
+}
+
+#middle-lime-N6 {
+    top  			 : -80px;
+	left 			 : 700px;
+	width   		 :  50px;
+	height  		 : 170px;
+	background-color : rgba( 255,  27, 255, 1);				
+	z-index  		 : 2;
+}
+
+#back-pink-N7 {
+    top  			 : 430px;
+	left 			 : 850px;
+	width  			 : 20px;
+	height 			 : 150px;
+	background-color : rgba( 255,  27, 255, 1);
+	z-index  		 : 1;
+}
+
+#back-pink-N8 {
+    top  			 : 0px;
+	left 			 : 20px;
+	width  			 : 20px;
+	height 			 : 150px;
+	background-color : rgba( 255,  27, 255, 1);
+	z-index  		 : 1;
+}
+
+#back-pink-N9 {
+    top  			 : 350px;
+	left 			 : 450px;
+	width  			 : 20px;
+	height 			 : 150px;
+	background-color : rgba( 255,  27, 255, 1);
+	z-index  		 : 1;
+}
+
+#back-lime-N10 {
+    top  			 : 600px;
+	left 			 : 500px;
+	width  			 : 20px;
+	height 			 : 150px;
+	background-color : lime;
+	z-index  		 : 1;
+}
+
+#back-pink-N11 {
+    top  			 : 130px;
+	left 			 : 800px;
+	width  			 : 20px;
+	height 			 : 150px;
+	/* transform 		 : rotateZ(50deg) skewX(18deg); */
+	background-color : rgba( 255,  27, 255, 1);
+	z-index  		 : 1;
+}
+
+.title-container {
+	position 	   : absolute;
+	top 		   : 120px;
+	left 		   : 20%;
+	z-index 	   : 10;
+	color 		   : white;
+	font-family    : sans-serif;
+	font-size 	   : 2em;
+	font-weight    : 500;
+	text-transform : uppercase;
+	z-index 	   : 10;
+}
+
+div[id*="pink"], div[id*="lime"] {
+	transform 		 : rotateZ(50deg) skewX(18deg);
+	filter   		 : blur(3px);
+	position 		 : absolute;
+}
+
+.title-container_str1, .title-container_str2 {
+	font-size      : 98px;
+	font-family    : Roboto, Helvetica, Arial, sans-serif;
+	letter-spacing : -3px;
+}
+
+.title-container_str1 {
+	margin: 0;
+}
+
+.title-container_str2 {
+	margin: -18px 0 0 0;
+}
+
+.title-container_str3, .title-container_str4 {
+	margin         : 0;
+	font-size      : 50px;
+    letter-spacing : 0px;
+    font-family    : monospace;
+    word-spacing   : -9px;
+}
+
+.title-container_str4 {
+	margin-top: -10px;
+}
+
+.slider-component_legend {
+	letter-spacing : 1px;
+    font-family    : monospace;
+}

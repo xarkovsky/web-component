@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Gradient Background</title>
+	<link rel="stylesheet" type="text/css" href="web-component.css">
+</head>
+<body>
+	<main id="main">
+		<!--
+		*  Сокращения:
+		*  расположения по глубине: f - front; m - middle; b - back;
+		*  color : p - pink; l - lime	
+		*
+		* 
+		-->
+		<div id="front-pink-N1"></div>
+		<div id="front-pink-N2"></div>
+		<div id="front-lime-N3"></div>
+		<div id="back-pink-N4" ></div>
+		<div id="back-lime-N5" ></div>
+		<!--div id="middle-lime-N6"></div>-->
+		<div id="back-pink-N7" ></div> 
+		<div id="back-pink-N8" ></div>
+		<div id="back-pink-N9" ></div>
+		<div id="back-lime-N10"></div>
+		<div id="back-pink-N11"></div>
+
+		<div id="title">
+			<div class="title-container">
+				<h1 class="title-container_str1">Web </h1>
+				<h1 class="title-container_str2">Component</h1>
+				<h1 class="title-container_str3">Input Type "Range"</h1>
+				<h1 class="title-container_str4">& API Canvas</h1>
+				
+			</div>
+		</div>
+	</main>
+
+	<div id='slider-component'>
+		<span class="slider-component_legend">blur value</span>
+		<div id='controls'>
+	      <div id='buttons'>
+	         <input type='button' class='slider-button'
+	                  id='minus-button' value='&ndash;'/>
+	         <input type='button' class='slider-button' 
+	                  id='plus-button' value='&plus;'/>
+	      </div>
+	
+	      <div id='slider'></div>
+	      <div id='readout'>0</div>
+	    </div>
+	</div>
+	 
+	<script type="text/javascript" src="web-component.js" ></script>
+		
+</body>
+</html>
